@@ -55,12 +55,6 @@ int main ( void )
     spi_init();
     LATBbits.LATB4 = 1;					// LED On
 
-	Pset(300,200,1);
-	sprintf(buf, "[299,200]=%x [300,200]=%x [301,200]=%x", Pget(299,200), Pget(300,200), Pget(301,200));
-    display(0,0,buf);
-	for(;;) ;
-
-
 	display(0, 0, "=== Char/Graphic Test ===");
 	for(i=0; i<4; i++){
 		for(j=0; j<64; j++){
