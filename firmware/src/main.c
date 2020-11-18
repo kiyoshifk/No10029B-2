@@ -47,7 +47,6 @@ int Pget(int x, int y);
 int main ( void )
 {
 	int i, j;
-	char buf[100];
 
     /* Initialize all modules */
     SYS_Initialize ( NULL );
